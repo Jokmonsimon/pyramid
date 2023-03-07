@@ -32,10 +32,9 @@ void print_pyramid(int n) {
 }
 
 int main(void) {
-    // Test the function with n = 4
+    // Test the function with n = 5 twice
     print_pyramid(4);
-
-    // Test the function with n = 5
+    printf("\n");
     print_pyramid(5);
 
     return 0;
