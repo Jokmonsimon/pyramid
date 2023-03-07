@@ -1,41 +1,26 @@
 #include <stdio.h>
 
-// This implementation assumes that the print_pyramid function should print a pyramid of characters starting from 'V', where each row has one more character than the previous row. The first test case in the main function (print_pyramid(4)) should produce the following output:
-
-//    V
-//   WV
-//  XXW
-// YYYX
-// And the second test case (print_pyramid(5)) should produce the following output:
-
-//    V
-//   WV
-//  XXW
-// YYYX
-// ZZZZY
-
-void print_pyramid(int n) {
-    char current_char = 'V';
-  
-    for (int i = 0; i < n; i++) {
-        // Print the current character and the characters before it
-        for (int j = 0; j <= i; j++) {
-            printf("%c", current_char - j);
+void pyramid(int n) {
+    char ch = 'V';
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            printf("%c", ch);
         }
-        
-        // Print a newline character
+        if (i > 1) {
+            for (int k = 1; k < i; k++) {
+                printf("%c", ch-1);
+            }
+        }
+        ch++;
         printf("\n");
-        
-        // Update the current character for the next row
-        current_char++;
     }
 }
 
 int main(void) {
-    // Test the function with n = 5 twice
-    print_pyramid(4);
+    // Test the function with n = 4 and n = 5
+    pyramid(4);
     printf("\n");
-    print_pyramid(5);
+    pyramid(5);
 
     return 0;
 }
