@@ -4,4 +4,4 @@ To run this code, you need to save it in a file with a .c extension (e.g. pyrami
 
 This will create an executable file called pyramid that you can run with the following command: `./pyramid`
 
-This should produce the expected output: ![Pyramid Output](pyramid.png)
+This should produce the expected output: ![Pyramid Output](Pyramid.png)
