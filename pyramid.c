@@ -18,14 +18,9 @@ void print_pyramid(int n) {
     char current_char = 'V';
   
     for (int i = 0; i < n; i++) {
-        // Print spaces before the current character
-        for (int j = 0; j < n - i - 1; j++) {
-        printf(" ");
-        }
-        
         // Print the current character and the characters before it
         for (int j = 0; j <= i; j++) {
-        printf("%c", current_char - j);
+            printf("%c", current_char - j);
         }
         
         // Print a newline character
