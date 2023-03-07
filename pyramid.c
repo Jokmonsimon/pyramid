@@ -2,14 +2,12 @@
 
 // This implementation assumes that the print_pyramid function should print a pyramid of characters starting from 'V', where each row has one more character than the previous row. The first test case in the main function (print_pyramid(4)) should produce the following output:
 
-// Copy code
 //    V
 //   WV
 //  XXW
 // YYYX
 // And the second test case (print_pyramid(5)) should produce the following output:
 
-// Copy code
 //    V
 //   WV
 //  XXW
